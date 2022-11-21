@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('Fontes/Poppins/Poppins-Thin.ttf');
+}
+@font-face {
+    font-family: 'Poppins-regular';
+    src: url('/Fontes/Poppins/Poppins-Regular.ttf');
+}
+
+body {
+    background-image: linear-gradient(to bottom right, rgb(255, 79, 79), rgba(255, 255, 255, 0.809));
+
+} 
+
+.pikachufaq{
+ width: 200px;   
+ margin-left: 950px ;
+ margin-top: 1300px;
+}
+
+.faq-heading{
+    text-align: center;
+    font-family: Poppins;
+    font-size: 50px;
+    
+}
+.faq-container{
+    height: 300px;
+}
+
+.pikachucotton{
+    border-radius: 300px;
+    width: 350px;
+
+}
+
+.pachi{
+    border-radius: 300px;
+    width: 350px;
+}
+
+.fainted{
+    border-radius: 300px;
+    width: 350px;
+}
+
+.faq-body{
+    font-size: px;
+}
+.caixa{
+    background-color:antiquewhite;
+    border-color: black;
+    border-style: solid;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.faq-page{
+    font-size: 30px;
+}
+
+.PF{
+    font-size: 40px;
+}

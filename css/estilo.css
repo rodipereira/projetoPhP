@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('/Php/Fontes/Poppins/Poppins-Thin.ttf');
+}
+@font-face {
+    font-family: 'Poppins-regular';
+    src: url('Fontes/Poppins/Poppins-Regular.ttf');
+}
+header {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 250px;
+}
+.logo-loja img{
+    border-radius: 16px;
+}
+.titulo {
+    font-family:'Poppins';  
+    position: absolute;
+    top: 30px;
+    right: 564px;
+    transform: translate(0, -50%);
+}
+body {
+    background-image: linear-gradient(to bottom right, rgb(255, 79, 79), rgba(255, 255, 255, 0.809));
+    margin-bottom: 1500px;
+}
+.login-link {
+    font-family: Poppins;
+    font-size: 13px;
+    position: absolute;
+    right: 185px;
+    top: 20px;
+}
+.login-link a:link {
+    text-decoration: none;
+    color: #000000;
+}
+.login-link a:visited {
+    color: #000000;
+}
+.login-link a:hover {
+    color: #ffffff;
+    transition: 0.4s;
+}
+.cadastro-link {
+    font-family: Poppins;
+    font-size: 13px;
+    position: absolute;
+    right: 55px;
+    top: 20px;
+}
+.cadastro-link a:link {
+    text-decoration: solid;
+    color: #000000;
+}
+.cadastro-link a:visited {
+    color: #000000;
+}
+.cadastro-link a:hover {
+    color: #ffffff;
+    transition: 0.4s;
+}
+.faq-link {
+    font-family: Poppins;
+    font-size: 13px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+.faq-link a:link {
+    text-decoration: solid;
+    color: #000000;
+}
+.faq-link a:visited {
+    color: #000000;
+}
+.faq-link a:hover {
+    color: #ffffff;
+    transition: 0.4s;
+}
+.login {
+    font-family: 'Poppins-regular';
+    position: absolute;
+    left: 560px;
+}
+.login h4 {
+    text-align: center;
+}
+.titulo {
+    text-align: center;
+}
+
+.galeria {
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    left: 50px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.herdier img{
+    width: 200px;
+}

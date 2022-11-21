@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Poppins-regular';
+    src: url('/Fontes/Poppins/Poppins-Regular.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins-regular', sans-serif;
+}
+body {
+    background-image: url(/Php/Imagens/pokeballpk.gif);
+    background-repeat: repeat;
+    background-size: 140px 140px;
+    background-position: center;
+
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+.container {
+    max-width: 700px;
+    width: 100%;
+    background: rgb(199, 199, 199);
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.container .titulo {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.container .titulo::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: #8D8D8D;
+}
+.container form .detalhes-usuario {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0 12px 0;
+    justify-content: space-between;
+}
+form .detalhes-usuario .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+.detalhes-usuario .input-box .detalhes {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.detalhes-usuario .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px; 
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.detalhes-usuario .input-box input:focus,
+.detalhes-usuario .input-box input:valid {
+    border-color: #8D8D8D;
+   
+}
+form .detalhes-genero .titulo-genero {
+    font-size: 20px;
+    font-weight: 500;
+}
+form .detalhes-genero .categorias {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+.detalhes-genero .categorias label {
+    display: flex;
+    align-items: center;
+}
+.detalhes-genero .categorias .escolha {
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    cursor: pointer;
+}
+ #dot-1:checked ~ .categorias label .um,
+ #dot-2:checked ~ .categorias label .dois,
+ #dot-3:checked ~ .categorias label .tres {
+    border-color: #d9d9d9;
+    background: #8D8D8D;
+ } 
+form input[type="radio"] {
+    display: none;
+ }
+form .botao {
+    height: 45px;
+    margin: 45px 0;
+ }
+form .botao input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    background: #275675;
+    cursor: pointer;
+ }
+form .botao input:hover {
+    background: #214863;
+ }
+ @media (max-width: 584px) {
+    .container {
+        max-width: 100%;
+    }
+    form .detalhes-usuario .input-box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .detalhes-genero .categorias {
+        width: 100%;
+    }
+    .container form .detalhes-usuario {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .detalhes-usuario::-webkit-scrollbar {
+        width: 0;
+    }
+ }
